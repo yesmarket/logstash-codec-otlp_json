@@ -1,12 +1,12 @@
 Gem::Specification.new do |s|
   s.name          = 'logstash-codec-otlp_json'
-  s.version       = '0.1.0'
+  s.version       = '0.2.0'
   s.licenses      = ['Apache-2.0']
-  s.summary       = 'Logstash Codec Plugin for OtlpJson'
-  s.description   = 'TODO: Write a longer description or delete this line.'
-  s.homepage      = 'TODO: Put your plugin''s website or public repo URL here.'
-  s.authors       = ['your_username']
-  s.email         = 'your_username@example.com'
+  s.summary       = 'Logstash Codec Plugin for OTLP/JSON'
+  s.description   = 'Reads OTLP/JSON formatted content, creating one event per log record.'
+  s.homepage      = 'https://github.com/yesmarket/logstash-codec-otlp_json'
+  s.authors       = ['Ryan Bartsch']
+  s.email         = 'rbartsch@yandex.com'
   s.require_paths = ['lib']
 
   # Files
@@ -19,6 +19,6 @@ Gem::Specification.new do |s|
 
   # Gem dependencies
   s.add_runtime_dependency 'logstash-core-plugin-api', "~> 2.0"
-  s.add_runtime_dependency 'logstash-codec-line'
+  s.add_runtime_dependency 'logstash-codec-json'
   s.add_development_dependency 'logstash-devutils'
 end
